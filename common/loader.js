@@ -1,18 +1,16 @@
-import Image from 'next/image';
+import Image from 'next/image'
+import styles from '../styles/Loader.module.scss'
 
-function Loader(props) {
-  const style = {
-    borderRadius: '50%',
-  }
+function Loader() {
   return (
     <div>
       <Image
-        className='loader'
+        className={styles.loader}
         src="/images/loader.jpg"
         alt="loader"
         width='100'
         height='100'
-        style={style}
+      // style={styles.element}
       />
     </div>
   );
